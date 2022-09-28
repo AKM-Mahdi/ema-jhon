@@ -1,0 +1,28 @@
+.shopPage {
+  margin: 50px 0px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.shopCatalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.products button {
+  border: none;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+.products button:hover {
+  background-color: blueviolet;
+}
+.OrderSummary {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 20px;
+}

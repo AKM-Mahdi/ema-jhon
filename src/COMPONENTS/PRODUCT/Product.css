@@ -1,0 +1,22 @@
+img {
+  max-width: 100%;
+}
+.product-container {
+  border: 2px solid black;
+  height: 440px;
+  border-radius: 4px;
+  padding: 5px;
+  position: relative;
+}
+
+.product-container button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 0px !important;
+}

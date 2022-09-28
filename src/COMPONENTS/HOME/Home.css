@@ -1,0 +1,44 @@
+.heroSection {
+  background-color: #f3f4fa;
+}
+
+.heroSection .container {
+  width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+}
+
+.right img {
+  max-width: 80%;
+  width: 700px;
+  float: right;
+  clear: both;
+}
+.heroSection h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  font-weight: 700;
+}
+.heroSection span {
+  color: #f69581;
+  font-size: 20px;
+  font-weight: 500;
+}
+.heroSection p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.heroSection a {
+  background-color: #ff9900;
+  padding: 12px 40px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+}
