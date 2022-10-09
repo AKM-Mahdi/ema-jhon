@@ -9,14 +9,37 @@ img {
   position: relative;
 }
 
-.product-container button {
+.product-container .product-btn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: absolute;
   bottom: 0px;
   left: 0px;
+}
+
+button {
+  margin: 5px;
+}
+.product-container .button {
   border: none;
   background-color: black;
   color: white;
-  width: 100%;
+  display: block;
   padding: 10px 30px;
   border-radius: 0px !important;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 30%;
+  }
+  .product-container .product-btn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
 }

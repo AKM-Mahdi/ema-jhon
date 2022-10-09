@@ -16,3 +16,21 @@ nav .container {
   color: white;
   padding-left: 30px;
 }
+
+@media (max-width: 768px) {
+  .logo {
+    text-align: center;
+  }
+  nav .container {
+    max-width: 768px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+  }
+  .menu {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    text-align: center;
+  }
+}

@@ -13,13 +13,18 @@ const Product = (props) => {
           <span>Rating: {ratings}</span> <span>Stock: {stock}</span>
         </p>
         <h3>Price: {price}</h3>
-        <button
-          onClick={() => {
-            addToCartHandler(product);
-          }}
-        >
-          Add To Cart
-        </button>
+        <div className="product-btn">
+          <button
+            onClick={() => {
+              addToCartHandler(product);
+            }}
+          >
+            Add To Cart
+          </button>
+          {/* <button className="rmvProduct" onClick={() => removeProductHandler()}>
+            Remove
+          </button> */}
+        </div>
       </div>
     </div>
   );
