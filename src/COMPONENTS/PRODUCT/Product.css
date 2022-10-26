@@ -7,15 +7,15 @@ img {
   border-radius: 4px;
   padding: 5px;
   position: relative;
-}
-
-.product-container .product-btn {
-  width: 100%;
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 1fr;
-  position: absolute;
   bottom: 0px;
   left: 0px;
+}
+
+.product-btn {
+  position: absolute;
+  bottom: 0px;
 }
 
 button {
@@ -32,14 +32,20 @@ button {
 
 @media (max-width: 768px) {
   img {
-    width: 30%;
+    width: 20%;
   }
-  .product-container .product-btn {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+  .product-container {
+    border: 2px solid black;
+    height: auto;
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+    display: block;
+    /* grid-template-columns: 1fr 1fr; */
+    /* bottom: 0px; */
+    /* left: 0px; */
+  }
+  .product-btn {
+    position: relative;
   }
 }

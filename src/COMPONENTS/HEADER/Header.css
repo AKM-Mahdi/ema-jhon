@@ -1,36 +1,81 @@
 nav {
   background-color: #1c2b35;
-  padding: 5px 0px;
+  padding: 8px 0px;
 }
-
-nav .container {
-  max-width: 1280px;
-  margin: 0 auto;
+.mobileMenu {
+  display: none;
+}
+.headerSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .menu a {
   text-decoration: none;
   color: white;
   padding-left: 30px;
 }
+.btnLogOut {
+  margin-left: 30px;
+  padding: 5px 10px;
+  font-family: "jost";
+  font-weight: 700;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .logo {
     text-align: center;
   }
-  nav .container {
-    max-width: 768px;
-    margin: 0 auto;
-    display: block;
+  .logo img {
+    width: 120px;
+
+    text-align: center;
+  }
+  .headerSection {
     align-items: center;
+    justify-content: space-between;
   }
   .menu {
+    display: none;
     text-decoration: none;
     color: white;
     padding-left: 30px;
     text-align: center;
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  .mobileMenu {
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 2px;
+    background-color: white;
+    display: block;
+  }
+
+  .mobileMenuItem {
+    background-color: red;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    right: -100%;
+    top: 59px;
+    transition: right 0.5s ease-out;
+  }
+  .mobileMenuItem ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  .mobileMenuItem ul li a {
+    font-size: 15px;
+    font-family: "jost";
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
   }
 }

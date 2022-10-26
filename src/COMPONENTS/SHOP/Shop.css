@@ -21,19 +21,15 @@
 .products button:hover {
   background-color: blueviolet;
 }
-.OrderSummary {
-  border: 2px solid black;
-  border-radius: 4px;
-  padding: 20px;
-}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .shopPage {
     margin: 50px 0px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
   .shopCatalog {
     margin: 50px 0px;
     display: grid;

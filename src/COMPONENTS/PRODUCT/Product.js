@@ -21,9 +21,6 @@ const Product = (props) => {
           >
             Add To Cart
           </button>
-          {/* <button className="rmvProduct" onClick={() => removeProductHandler()}>
-            Remove
-          </button> */}
         </div>
       </div>
     </div>

@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../CART/Cart";
 import Product from "../PRODUCT/Product";
-import {
-  addToDb,
-  // removeProductFromDb,
-  clearDb,
-  getStoredData,
-} from "../../UTILITIES/LocalDatabase";
+import { addToDb, clearDb, getStoredData } from "../../UTILITIES/LocalDatabase";
 import "./Shop.css";
+import { useLoaderData } from "react-router-dom";
 
 const Shop = () => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    fetch("products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  // load data using state and useEffect
+
+  // const [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   fetch("products.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setProducts(data));
+  // }, []);
+
+  // load product usign LOADER
+  const products = useLoaderData();
 
   // load more button add using slice function
   const [productCount, setProductCount] = useState(6);

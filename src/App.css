@@ -10,9 +10,17 @@ body {
   margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .container {
-    max-width: 768px;
+    max-width: 1000px;
+    width: 92%;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    width: 90%;
     margin: auto;
   }
 }

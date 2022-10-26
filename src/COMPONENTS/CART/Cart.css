@@ -16,5 +16,8 @@
 }
 .orderSummary {
   position: sticky;
-  top: 20px;
+  top: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 20px;
 }

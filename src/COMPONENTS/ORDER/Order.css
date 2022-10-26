@@ -1,0 +1,10 @@
+.review-order {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 3px;
+  padding: 10px;
+  gap: 15px;
+  margin-bottom: 10px;
+}

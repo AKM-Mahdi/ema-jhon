@@ -2,7 +2,7 @@ import React from "react";
 import "./Cart.css";
 
 const Cart = ({ cart, clearLoaclDb }) => {
-  console.log(cart);
+  // console.log(cart);
 
   // quantity
   const quantity = cart.reduce(
